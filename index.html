@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Corleys Custom Mustangs</title>
-  <meta name="description" content="Mustang-only performance and custom builds in Afton, Oklahoma. $100/hr." />
+  <meta name="description" content="Mustang-only performance and custom builds in Afton, Oklahoma. Call 918-314-8648." />
 
   <style>
     :root{
@@ -69,6 +69,20 @@
       color: #ffd2ad;
     }
     nav a:hover{background: rgba(255,122,0,.12); color:#fff}
+
+    /* Contact quick */
+    .contact-quick{
+      display:flex;
+      gap:10px;
+      flex-wrap:wrap;
+      font-size:12px;
+      color:#ffd2ad;
+    }
+    .contact-quick a{
+      font-weight:900;
+      color:#ffd2ad;
+    }
+    .contact-quick a:hover{color:#fff}
 
     /* Hero */
     .hero{
@@ -156,43 +170,6 @@
     .stat .v span{color:var(--orange)}
     .stat .s{margin:6px 0 0; color:#d8d8d8; font-size:12px}
 
-    /* Sections */
-    .section{padding: 26px 0}
-    .sectionHead{
-      display:flex; align-items:flex-end; justify-content:space-between;
-      gap:12px; margin-bottom:14px;
-    }
-    .sectionHead h2{margin:0; font-size:18px; letter-spacing:.2px}
-    .sectionHead p{margin:0; color:var(--muted); font-size:13px}
-
-    .grid{
-      display:grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap:14px;
-    }
-    .card{
-      border-radius: var(--radius);
-      background: linear-gradient(180deg, rgba(255,255,255,.06), rgba(255,255,255,.02));
-      border: 1px solid rgba(255,255,255,.08);
-      box-shadow: var(--shadow);
-      padding: 16px;
-      min-height: 120px;
-    }
-    .card h3{margin:0 0 6px; font-size:14px}
-    .card p{margin:0; color:var(--muted); font-size:13px}
-    .chip{
-      display:inline-flex; align-items:center;
-      margin-top:12px;
-      padding:7px 10px;
-      border-radius: 999px;
-      font-size:12px;
-      font-weight:900;
-      background: rgba(255,122,0,.12);
-      border:1px solid rgba(255,122,0,.28);
-      color:#ffd2ad;
-      width: fit-content;
-    }
-
     .stripe{
       margin-top: 14px;
       border-radius: var(--radius);
@@ -224,13 +201,10 @@
     .foot a{color:#ffd2ad; font-weight:900}
     .foot a:hover{color:#fff}
 
-    /* Mobile */
     @media (max-width: 900px){
       .heroGrid{grid-template-columns:1fr}
       .heroTitle{font-size:34px}
-      .grid{grid-template-columns:1fr}
       nav{justify-content:center}
-      .brand{min-width: unset}
       .topbar .row{flex-direction:column; align-items:flex-start}
     }
   </style>
@@ -240,19 +214,23 @@
 
   <div class="topbar">
     <div class="wrap">
-      <div class="row topbar row">
+      <div class="row">
         <a class="brand" href="index.html">
-          <div class="mark" aria-hidden="true">
-            <!-- Simple mustang-style mark -->
+          <div class="mark">
             <svg viewBox="0 0 24 24">
               <path d="M21 10.2c-1.8-1.6-4.9-2.4-7.4-2.6-1.8-.2-3.4.1-4.9.6l-.8-.9-1.4 1.1.9 1.1c-1 .6-1.9 1.4-2.6 2.3L3 12l1.5.7c-.2.4-.3.9-.4 1.4l-1.1.7 1.5.6c.4 2 2.6 3.2 6.4 3.2 5.7 0 9.2-2.2 10.7-4.6.7-1.1.5-2.7-.0-3.8z"/>
             </svg>
           </div>
           <div>
             <h1>Corleys Custom Mustangs</h1>
-            <p>Afton, Oklahoma • Labor Rate: <strong style="color:var(--orange)">$100/hr</strong></p>
+            <p>Afton, Oklahoma • $100/hr</p>
           </div>
         </a>
+
+        <div class="contact-quick">
+          <span>📞 <a href="tel:19183148648">918-314-8648</a></span>
+          <span>✉️ <a href="mailto:Corleycustomsllc@gmail.com">Corleycustomsllc@gmail.com</a></span>
+        </div>
 
         <nav>
           <a href="index.html">Home</a>
@@ -278,14 +256,13 @@
 
             <h2 class="heroTitle">Mustang Performance. <span>Built Right.</span></h2>
             <p class="heroLead">
-              Corleys Custom Mustangs is focused on one thing: Ford Mustangs. From bolt-ons to full builds,
-              we do the work clean, the parts right, and the details right — because Mustang people notice.
+              Corleys Custom Mustangs focuses exclusively on Ford Mustangs — from bolt-ons to full builds.
+              Clean work, real parts, and builds that actually match the goal.
             </p>
 
             <div class="ctaRow">
-              <a class="btn primary" href="contact.html">Get Scheduled</a>
-              <a class="btn" href="services.html">See Services</a>
-              <a class="btn" href="builds.html">See Builds</a>
+              <a class="btn primary" href="tel:19183148648">Call the Shop</a>
+              <a class="btn" href="mailto:Corleycustomsllc@gmail.com">Email Us</a>
             </div>
           </div>
 
@@ -293,99 +270,20 @@
             <div class="stat">
               <div class="k">Shop Rate</div>
               <div class="v"><span>$100</span>/hour</div>
-              <p class="s">Transparent labor. Real work. No nonsense.</p>
+              <p class="s">Straight labor. No games.</p>
             </div>
-
-            <div class="stat">
-              <div class="k">Specialty</div>
-              <div class="v"><span>Mustangs</span> Only</div>
-              <p class="s">S197 • S550 • New Edge • Fox — we speak Mustang.</p>
-            </div>
-
             <div class="stat">
               <div class="k">Location</div>
               <div class="v"><span>Afton</span>, OK</div>
-              <p class="s">Serving NE Oklahoma + surrounding areas.</p>
+              <p class="s">Serving NE Oklahoma</p>
             </div>
           </div>
         </div>
       </div>
 
       <div class="stripe">
-        <span><strong>Quick Start:</strong> Want a quote? Hit <a href="contact.html">Contact</a> and tell us year/model + goal.</span>
-        <span>Performance • Swaps • Drivetrain • Suspension • Full Builds</span>
-      </div>
-    </section>
-
-    <section class="section">
-      <div class="sectionHead">
-        <h2>Core Services</h2>
-        <p>Mustang-focused work that actually moves the needle.</p>
-      </div>
-
-      <div class="grid">
-        <div class="card">
-          <h3>Coyote Swaps</h3>
-          <p>Planning, install, wiring/PCM integration, drivetrain setup.</p>
-          <div class="chip">Swap-ready builds</div>
-        </div>
-
-        <div class="card">
-          <h3>Cam + Timing Work</h3>
-          <p>3V / 4V cam installs, timing kits, and supporting parts done right.</p>
-          <div class="chip">No sketch timing</div>
-        </div>
-
-        <div class="card">
-          <h3>Transmission Swaps</h3>
-          <p>Manual/auto swaps, supporting hardware, driveline and setup.</p>
-          <div class="chip">Streetable + strong</div>
-        </div>
-
-        <div class="card">
-          <h3>Suspension & Chassis</h3>
-          <p>Lowering, bushings, control arms, alignment-ready setups.</p>
-          <div class="chip">Grip + ride quality</div>
-        </div>
-
-        <div class="card">
-          <h3>Exhaust & Headers</h3>
-          <p>Headers, mid-pipes, catbacks — fitment and leaks handled correctly.</p>
-          <div class="chip">Clean installs</div>
-        </div>
-
-        <div class="card">
-          <h3>Full Mustang Builds</h3>
-          <p>From goal + budget to finished product. One plan, one direction.</p>
-          <div class="chip">Build management</div>
-        </div>
-      </div>
-    </section>
-
-    <section class="section">
-      <div class="sectionHead">
-        <h2>Why Corleys</h2>
-        <p>Because “close enough” isn’t a Mustang build.</p>
-      </div>
-
-      <div class="grid">
-        <div class="card">
-          <h3>Mustang-Only Focus</h3>
-          <p>No guessing. No learning on your car. We specialize here.</p>
-        </div>
-        <div class="card">
-          <h3>Clean Work, Real Parts</h3>
-          <p>Proper hardware, torque, routing, and finishing details.</p>
-        </div>
-        <div class="card">
-          <h3>Built For How You Drive</h3>
-          <p>Street, track, show, or “Mexico” — we build to the goal.</p>
-        </div>
-      </div>
-
-      <div class="stripe" style="margin-top:16px;">
-        <span><strong>Ready?</strong> Tell us your Mustang year/model and what you want it to do.</span>
-        <span><a class="btn primary" href="contact.html" style="padding:10px 14px;border-radius:12px;">Contact the Shop</a></span>
+        <span><strong>Quick Contact:</strong> Call <a href="tel:19183148648">918-314-8648</a> or email <a href="mailto:Corleycustomsllc@gmail.com">Corleycustomsllc@gmail.com</a></span>
+        <span>Mustang Performance • Swaps • Full Builds</span>
       </div>
     </section>
   </main>
@@ -395,9 +293,8 @@
       <div class="foot">
         <div>© <span id="y"></span> Corleys Custom Mustangs • Afton, Oklahoma</div>
         <div>
-          <a href="services.html">Services</a> •
-          <a href="builds.html">Builds</a> •
-          <a href="contact.html">Contact</a>
+          📞 <a href="tel:19183148648">918-314-8648</a> •
+          ✉️ <a href="mailto:Corleycustomsllc@gmail.com">Corleycustomsllc@gmail.com</a>
         </div>
       </div>
     </div>
