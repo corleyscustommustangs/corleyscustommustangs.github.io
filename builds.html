@@ -4,6 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Builds | Corleys Custom Mustangs</title>
+
 <style>
 body {
   margin: 0;
@@ -11,19 +12,28 @@ body {
   background-color: #0b0b0b;
   color: #ffffff;
 }
+
+/* Header */
 header {
   background: #000;
-  padding: 25px;
+  padding: 30px 20px;
   text-align: center;
 }
 header h1 {
   color: #ff7a00;
   margin: 0;
+  font-size: 32px;
 }
+header p {
+  margin-top: 8px;
+  color: #cccccc;
+}
+
+/* Nav */
 nav {
   background: #111;
   text-align: center;
-  padding: 10px;
+  padding: 12px;
 }
 nav a {
   color: #ff7a00;
@@ -31,60 +41,63 @@ nav a {
   text-decoration: none;
   font-weight: bold;
 }
+
+/* Page layout */
 section {
   padding: 40px 20px;
-  max-width: 1000px;
+  max-width: 1100px;
   margin: auto;
 }
+
+/* Build card */
 .build {
   background: #151515;
   padding: 20px;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
   border-left: 4px solid #ff7a00;
-}
-.placeholder {
-  color: #bbbbbb;
-  font-style: italic;
+  border-radius: 8px;
 }
 
-/* ✅ ADDED: simple gallery (does NOT change your layout) */
-.gallery{
+/* Gallery */
+.gallery {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 14px;
-  margin-top: 14px;
+  gap: 16px;
+  margin-top: 16px;
 }
-.gallery img{
+.gallery img {
   width: 100%;
   height: 280px;
   object-fit: cover;
-  display: block;
-  border-radius: 10px;
+  border-radius: 8px;
   border: 1px solid #222;
 }
 
-@media (max-width: 800px){
-  .gallery{
+@media (max-width: 800px) {
+  .gallery {
     grid-template-columns: 1fr;
   }
-  .gallery img{
+  .gallery img {
     height: 240px;
   }
 }
 
+/* Footer */
 footer {
   background: #000;
   text-align: center;
   padding: 20px;
   font-size: 14px;
+  color: #bbbbbb;
 }
 </style>
 </head>
+
 <body>
 
 <header>
-  <h1>Featured Builds</h1>
-  <p>Mustang Performance & Custom Projects</p>
+  <h1>Builds</h1>
+  <p>Real Mustang builds from Corleys Custom Mustangs</p>
 </header>
 
 <nav>
@@ -97,37 +110,26 @@ footer {
 
 <section>
 
-<div class="build">
-  <h2 style="color:#ff7a00;">Builds Coming Soon</h2>
-  <p class="placeholder">
-    This section will showcase completed Mustang builds, upgrades,
-    and performance projects as they are finished.
-  </p>
-</div>
+  <div class="build">
+    <h2 style="color:#ff7a00;">Current Build</h2>
+    <p>
+      In-progress Mustang build showing engine teardown and shop work.
+      More photos and videos will be added as builds move forward.
+    </p>
 
-<!-- ✅ ADDED: Photos show here on the Builds page -->
-<div class="build">
-  <h2 style="color:#ff7a00;">Build Photos</h2>
-
-  <div class="gallery">
-    <img src="assets/builds/img/build-01.jpg" alt="Corleys Custom Mustangs build photo 1" loading="lazy">
-    <img src="assets/builds/img/build-02.jpg" alt="Corleys Custom Mustangs build photo 2" loading="lazy">
+    <div class="gallery">
+      <img src="IMG_0996.webp" alt="Corleys Custom Mustangs build photo">
+      <img src="IMG_0996.webp" alt="Corleys Custom Mustangs build photo">
+    </div>
   </div>
 
-  <p class="placeholder" style="margin-top:12px;">
-    More builds and videos will be added as projects come through the shop.
-  </p>
-</div>
-
-<div class="build">
-  <h2 style="color:#ff7a00;">What Will Be Shown</h2>
-  <ul>
-    <li>Vehicle year & model</li>
-    <li>Modifications performed</li>
-    <li>Before & after photos</li>
-    <li>Performance goals</li>
-  </ul>
-</div>
+  <div class="build">
+    <h2 style="color:#ff7a00;">More Builds Coming Soon</h2>
+    <p>
+      This page will continue to grow with customer builds, performance upgrades,
+      before & after shots, and video clips straight from the shop.
+    </p>
+  </div>
 
 </section>
 
